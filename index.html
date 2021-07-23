@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./styles/styles.css">
+
+  <title>tip calculator</title>
+</head>
+<body>
+
+  <header class="logo">
+    <img src="./images/logo.svg" alt="logo">
+  </header>
+
+  <main class="container">
+
+    <div class="card">
+      <div class="input">
+        <div class="bill-container">
+          <div class="label-wrapper">
+            <label for="input-bill">Bill</label>
+          </div>
+
+          <div class="input-wrapper">
+            <input class="input-text" type="text" name="input-bill" id="input-bill" placeholder="0.00">
+            <img src="./images/icon-dollar.svg" alt="dollar-icon">
+          </div>
+        </div>
+
+        <div class="tip-container">
+          <div class="label-wrapper">
+            <label for="input-tip">Select Tip %</label>
+          </div>
+
+          <div class="btn-wrapper">
+            <div class="btn tip">5%</div>
+            <div class="btn tip">10%</div>
+            <div class="btn tip btn-active">15%</div>
+            <div class="btn tip">25%</div>
+            <div class="btn tip">50%</div>
+            <input class="input-text" type="text" name="input-tip" id="input-tip" placeholder="custom %">
+          </div>
+        </div>
+
+        <div class="people-container">
+          <div class="label-wrapper">
+            <label for="input-people">Number of People</label>
+            <div class="error-msg">can't be zero</div>
+          </div>
+
+          <div class="input-wrapper">
+            <input class="input-text" type="text" name="input-people" id="input-people" placeholder="1">
+            <img src="./images/icon-person.svg" alt="person-icon">
+          </div>
+        </div>
+
+      </div>
+      <div class="output">
+        <div class="line-wrapper">
+          <div class="line-output">
+            <div class="title-wrapper">
+              <div class="title">Tip Amount</div>
+              <div class="desc">/ person</div>
+            </div>
+            <div class="value">$0.00</div>
+          </div>
+
+          <div class="line-output">
+            <div class="title-wrapper">
+              <div class="title">Total</div>
+              <div class="desc">/ person</div>
+            </div>
+            <div class="value">$0.00</div>
+          </div>
+        </div>
+        <div class="btn reset">Reset</div>
+      </div>
+    </div>
+
+  </main>
+
+  <footer class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="https://larissabott.github.io/LarissasSite/" target="_blank" rel="noopener noreferrer">Larissa Bottenfield</a>.
+  </footer>
+
+  <script src="./js/app.js"></script>
+</body>
+</html>
